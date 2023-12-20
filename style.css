@@ -10,6 +10,15 @@ body {
     justify-content: space-between;
 }
 
+a {
+    color: #40af46; /* Same color as the body text */
+    text-decoration: none; /* Optional: Removes the underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover for better user experience */
+}
+
 header, footer {
     background-color: #292034;
     padding: 10px 0;
