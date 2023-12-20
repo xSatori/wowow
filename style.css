@@ -10,6 +10,11 @@ body {
     justify-content: space-between;
 }
 
+.solo-letter {
+    transition: font-size 100ms;
+    display: inline-block;
+}
+
 a {
     color: #40af46; /* Same color as the body text */
     text-decoration: none; /* Optional: Removes the underline from links */

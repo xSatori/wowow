@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wowow.lol</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>wowow</h1>
+        <h1><span class="solo-letter">w</span><span class="solo-letter">o</span><span class="solo-letter">w</span><span class="solo-letter">o</span><span class="solo-letter">w</span></h1>
     </header>
     <section>
         <p>wowow is the most important cultural quirk of the Farcaster community.</p>
         <p>Contract address: 0xB36A0e830bD92E7AA5D959c17A20D7656976dd98</p>
+        <p>Farcaster: <a href="https://warpcast.com/~/channel/wowow" target="_blank">/wowow</a></p>
         <p>Twitter: <a href="https://twitter.com/wowowdao" target="_blank">@wowowdao</a></p><br>
     </section>
     <footer>
         <p>wowow, no rights reserved</p>
     </footer>
+
+    <script>
+        $(document).ready(function() {
+            $(".solo-letter").mouseenter(function() {
+                $(this).addClass("grow");
+            }).mouseleave(function() {
+                $(this).removeClass("grow");
+            });
+
+            setInterval(function() {
+                $(".grow").each(function() {
+                    let size = parseFloat($(this).css("font-size"));
+                    size += 2;
+                    $(this).css("font-size", size);
+                });
+            }, 100);
+        });
+    </script>
 </body>
 </html>
